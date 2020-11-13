@@ -1,0 +1,333 @@
+/*----------------------------
+全体
+----------------------------*/
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+  text-align: center;
+  font-family: sans-serif;
+}
+header{
+  background-color: black;
+  color: white;
+  padding: 2px;
+  text-align: left;
+}
+header img{
+  margin: 20px 10px;
+  float: left;
+}
+header h2{
+  float: left;
+  margin-left: 30px;
+}
+#link{
+  float: right;
+  position: relative;
+  top: 40px;
+  right: 30px;
+}
+a, span{
+  text-decoration: none;
+  color: white;
+}
+footer{
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 60px;
+  padding-top: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.change{
+  color: yellow;
+}
+.red{
+  color: rgb(236, 77, 77);
+}
+h1{
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 0;
+}
+#sns, #activity, #game, #special, #questionary{
+  margin-bottom: 80px;
+}/*footerで見えないとこ用*/
+/*----------------------------
+top
+----------------------------*/
+#text{
+  display: inline-block;
+  border: 1px dashed rgb(93, 201, 224);
+  text-align: left;
+  position: absolute;
+  right: 40px;
+  bottom: 330px;
+  padding: 10px 20px;
+  border-radius: 0.7em;
+}
+#info{
+  background-color: rgb(179, 240, 102);
+  margin-top: 50px;
+}
+#news_text{
+  margin: 0 auto 80px;
+  width: 473px;
+}
+#news_text p{
+  text-align: left;
+}
+#sns{
+  background-color: black;
+}
+#sns img{
+  width: 90px;
+  margin: 20px 10px;
+}
+/*スライドショー*/
+.slide{
+  border: 1px solid black;
+  width: 720px;
+  background-color: black;
+}
+.image_box img{
+  max-width: 100%;
+}
+.toolbar{
+  overflow: hidden;
+}
+.nav{
+  display: inline-block;
+}
+#prev, .game_prev{
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: url(slide/prev.png) no-repeat;
+}
+#page, .game_page{
+  display: inline-block;
+  float: left;
+  margin-top: 8px;
+  height: 32px;
+  color: white;
+}
+#next, .game_next{
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: url(slide/next.png) no-repeat;
+}
+#index section, #game section{
+  width: 720px;
+  margin: 10px auto;
+}
+
+
+/*----------------------------
+activity
+----------------------------*/
+#activity{
+  margin-bottom: 80px;
+}
+.activity_text{
+  position: relative;
+  width: 1000px;
+  padding: 15px 50px;
+  box-sizing: border-box;
+  margin: 30px auto 50px;
+}
+.activity_text::before, .activity_text::after{
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 20px;
+  height: 100%;
+  border-top: 3px solid rgb(61, 61, 61);
+  border-bottom: 3px solid rgb(61, 61, 61);
+  box-sizing: border-box;
+}
+.activity_text::before{
+  left: 0;
+  border-left: 3px solid rgb(61, 61, 61);
+}
+.activity_text::after{
+  right: 0;
+  border-right: 3px solid rgb(61, 61, 61);
+}
+#activity section img{
+  max-width: 100%;
+}
+#activity ul{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 0.7em;
+}
+#activity li{
+  float: left;
+  width: 50%;
+  height: 140px;
+}
+.center{
+  margin: 0 auto;
+  width: 1000px;
+}
+#big{
+  width: 800px;
+  margin: auto;
+  position: relative;
+  right: 18%;
+}
+#big img{
+  display: inline;
+  width: 100%;
+}
+.center ul{
+  margin: auto;
+  width: 300px;
+  position: absolute;
+  bottom: -580px;
+  right: 10%;
+}
+.mini{
+  width: 100px;
+}
+#meeting{
+  background-color: rgb(119, 233, 165);
+}
+
+
+
+/*----------------------------
+game
+----------------------------*/
+.balloon{
+  position: relative;
+  display: inline-block;
+  margin: 1.5em auto;
+  padding: 20px 50px;
+  min-width: 120px;
+  max-width: 100%;
+  background: lightgray;
+  border: 2px solid black;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.balloon:before{
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-bottom: 12px solid lightgray;/*footerに乗っかってるとこ*/
+  z-index: 2;
+}
+.balloon:after{
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-bottom: 14px solid black;
+  z-index: 1;
+}
+#sale{
+  background-color: rgb(139, 184, 242);
+  text-align: center;
+}
+#y2017{
+  background-color: rgb(153, 228, 87);
+  text-align: center;
+}
+#y2018{
+  background-color: rgb(221, 215, 75);
+  text-align: center;
+}
+#game{
+  margin-bottom: 60px;
+}
+#yozawiza p{
+  line-height: 14px;
+  border-radius: 0.7em;
+}
+#game img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/*----------------------------
+special
+----------------------------*/
+#games{
+  background-color: rgb(233, 76, 71);
+}
+#game_img img[src="images/chara1.png"]{
+  width: 200px;
+  position: absolute;
+  left: 250px;
+  top: 200px;
+}
+#game_img img[src="images/chara2.png"]{
+  width: 200px;
+  position: absolute;
+  right: 250px;
+  top: 200px;
+}
+#output p{
+  line-height: 15px;
+}
+#poster{
+  background-color: rgb(102, 205, 219);
+}
+.poster1 img, .poster2 img{
+  width: 400px;
+}
+.poster1{
+  float: left;
+  margin-left: 15%;
+  margin-bottom: 4%;
+}
+.poster2{
+  float: right;
+  margin-right: 15%;
+  margin-bottom: 4%;
+}
+
+
+
+/*----------------------------
+questionary
+----------------------------*/
+#question{
+  width: 250px;
+  margin: auto;
+  text-align: left;
+}
+
+
+
+/*----------------------------
+twitter,facebook
+----------------------------*/
+.sns{
+  position: absolute;
+  top: 43%;
+}

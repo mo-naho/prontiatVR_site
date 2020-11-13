@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ProntiatVR</title>
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+  <header class="clearfix">
+    <a href="index.html"><img src="images/rogo.png"></a>
+    <div id="link">
+      <a href="index.html" class="change">ホーム</a>
+      <a href="activity.html">活動概要</a>
+      <a href="game.html">制作物</a>
+      <a href="special.html">スペシャル</a>
+      <a href="questionary.html">アンケート</a>
+    </div>
+  </header>
+
+  <div id="index">
+    <section><!--スライドショーのjs-->
+      <div class="slide">
+        <div class="image_box">
+          <img src="slide/img1.png" id="main_image">
+        </div>
+        <div class="toolbar">
+          <div class="nav" class="clearfix">
+            <div id="prev"></div>
+            <span id="page"></span>
+            <div id="next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="text">
+      <p>1 2017年ホームページ用の写真<br>
+        2 プロジェクト交流会<br>
+        3 最終成果報告会 授与式<br>
+        4-5 VRゲーム体験会</p>
+    </div>
+
+    <div id="news">
+      <h1 id="info">NEWS</h1>
+      <div id="news_text"></div><!--newsのjs-->
+    </div>
+
+    <div id="sns">
+      <a href="twitter.html" target="_blank"><img src="images/twitter.png"></a>
+      <!--https://twitter.com/prontiatvr-->
+      <a href="facebook.html" target="_blank"><img src="images/facebook.png"></a>
+      <!--https://ja-jp.facebook.com/prontiat/-->
+    </div>
+
+  </div><!--indexの-->
+
+  <footer>
+    <p>Copyright ©︎2018 Motokoawa, All rights reserved.</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ProntiatVR</title>
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+  <header class="clearfix">
+    <a href="index.html"><img src="images/rogo.png"></a>
+    <div id="link">
+      <a href="index.html">ホーム</a>
+      <a href="activity.html" class="change">活動概要</a>
+      <a href="game.html">制作物</a>
+      <a href="special.html">スペシャル</a>
+      <a href="questionary.html">アンケート</a>
+    </div>
+  </header>
+
+  <div id="activity">
+    <div class="activity_text">
+      <h1>プロンティアットVRとは</h1>
+      <p>プロンティアットVRは2017年、日本のVR業界の発展を目的に作られました。<br>
+      2017年は「開発」と「情報発信」を軸とした活動を行いました。<br>
+      VRゲームを実際に作ることで、ノウハウを手に入れ、それを記事にして発信していました。<br>
+
+      2018年は「マルチVRゲームの開発」を軸として活動しています。<br>
+      昨年、VRゲーム体験会を行なった際、多くの人が「孤独感がある」とアンケートに答えていました。<br>
+      なので去年培ったノウハウを使い、協力プレイ、または対戦プレイのできるVRゲームを開発しています。</p>
+      <p>プロンティアットVRはUE4班、デザイン班、Web班の3つに別れて活動しています。<br>
+      UE4班は「Unreal Engine4」という3Dゲームエンジンを使ってVRゲームの開発を行っています。<br>
+      Web班は、Ruby on Railsを使ってホームページや、UE4班が書く開発ブログのプラットフォームを作成しています。<br>
+      デザイン班はゲーム内のキャラクターやオブジェクトなどのモデルの作成、WEBサイトのデザインやポスター等、多種多様な活動を行っています。</p>
+      <p>私たちは週に一回、全体会議と各班会議を行なっています。<br>
+      全体会議では各班のタスクの状況や、今後のイベントなどについて話し合います。<br>
+      各班会議では各人のタスクの状況、次のタスク、班の仕事などについて話し合います。</p>
+    </div>
+
+
+    <h1 id="meeting">会議、勉強会風景</h1>
+    <section><!--クリックで画像が変わるjs-->
+      <div class="center">
+        <div id="big">
+          <img src="activity/img1.png" id="bigimg">
+        </div>
+        <ul>
+          <p>画像をクリックすると<br>
+            左の画像が変わります。</p>
+          <li><img src="activity/mini-img1.png" class="mini" data-image="activity/img1.png"></li>
+          <li><img src="activity/mini-img2.png" class="mini" data-image="activity/img2.png"></li>
+          <li><img src="activity/mini-img4.png" class="mini" data-image="activity/img4.png"></li>
+          <li><img src="activity/mini-img5.png" class="mini" data-image="activity/img5.png"></li>
+          <li><img src="activity/mini-img3.png" class="mini" data-image="activity/img3.png"></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+
+  <footer>
+    <p>Copyright ©︎2018 Motokoawa, All rights reserved.</p>
+  </footer>
+  <script src="activity.js"></script>
+</body>
+</html>

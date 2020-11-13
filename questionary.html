@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ProntiatVR</title>
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+  <header class="clearfix">
+    <a href="index.html"><img src="images/rogo.png"></a>
+    <div id="link">
+      <a href="index.html">ホーム</a>
+      <a href="activity.html">活動概要</a>
+      <a href="game.html">制作物</a>
+      <a href="special.html">スペシャル</a>
+      <a href="questionary.html" class="change">アンケート</a>
+    </div>
+  </header>
+
+  <div id="questionary">
+    <p><br>VRゲームに関するアンケートです。<br>
+    回答は一回のみとなっております。</p>
+    <p class="red">ChromeではCokkieが正常に動作しません。</p>
+    <br>
+    <section>
+      <p>VRゲームをしたことがありますか？</p>
+      <form id="form" action="thankyou.html">
+        <div id="question">
+          <input type="radio" name="frequency">知らない<br>
+          <input type="radio" name="frequency">聞いたことがある<br>
+          <input type="radio" name="frequency">知っているがやったことはない<br>
+          <input type="radio" name="frequency">やったことがある<br>
+        </div>
+        <input type="submit" name="送信する" id="submit"><br>
+      </form>
+      <button id="remove">クッキー削除</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>Copyright ©︎2018 Motokoawa, All rights reserved.</p>
+  </footer>
+  <script src="js.cookie.js"></script>
+  <script src="questionary.js"></script>
+</body>
+</html>
